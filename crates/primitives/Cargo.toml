@@ -13,9 +13,13 @@ readme = "../../README.md"
 exclude = ["build.rs", "src/kzg/*.txt"]
 
 [dependencies]
-alloy-primitives = { version = "0.4", default-features = false, features = [
+# alloy-primitives = { version = "0.4", default-features = false, features = [
+#     "rlp",
+# ] }
+alloy-primitives = { git = "https://github.com/alloy-rs/core/",rev = "fe4a535", default-features = false, features = [
     "rlp",
 ] }
+
 alloy-rlp = { version = "0.3", default-features = false, features = ["derive"] }
 hashbrown = "0.14"
 auto_impl = "1.1"
