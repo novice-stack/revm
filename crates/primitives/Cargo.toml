@@ -10,7 +10,7 @@ version = "1.3.0"
 readme = "../../README.md"
 
 [dependencies]
-alloy-primitives = { version = "0.4", default-features = false, features = [
+alloy-primitives = { git = "https://github.com/alloy-rs/core/",rev = "fe4a535", default-features = false, features = [
     "rlp",
 ] }
 alloy-rlp = { version = "0.3", default-features = false, features = ["derive"] }
